@@ -1,7 +1,7 @@
 FROM docker.io/centos:latest
 MAINTAINER Atanu Banerjee (atnu.bandyopadhyay@sc.com)
 RUN dnf clean all
-RUN rm -r /var/cache/dnf
+RUN rm -rf /var/cache/dnf
 RUN dnf upgrade
 RUN yum install httpd -y
 RUN echo "WebServer created from Jenkins" >  /var/www/html/index.html
