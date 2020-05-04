@@ -1,4 +1,4 @@
-FROM docker.io/centos7:latest
+FROM docker.io/centos:7
 MAINTAINER Atanu Banerjee (atnu.bandyopadhyay@sc.com)
 RUN yum install httpd -y
 RUN echo "WebServer created from Jenkins" >  /var/www/html/index.html
